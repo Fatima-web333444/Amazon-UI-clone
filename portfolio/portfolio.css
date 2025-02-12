@@ -1,0 +1,222 @@
+*{
+    top: 0;
+    margin: 0;
+}
+.navbar{
+    display: flex;
+    justify-content: space-around;
+    border: 2px solid black;
+    align-items: center;
+    background-color: rgb(76, 8, 8);
+    padding: 16px;
+    position: fixed;
+    width: 100%;
+}
+.logo{
+    color: rgb(205, 103, 110);
+    font-weight: 80px;
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif
+}
+.navitems{
+    
+    display: flex;
+   width: 700px;
+    align-items: center;
+    justify-content:space-around;
+    
+}
+.navitems a{
+    color: white;
+    text-decoration: none;
+    position: relative;
+    font-size: 1em;
+    font-weight: 500;
+    
+}
+.navitems span{
+    position:absolute;
+    top: 0;
+    left: 460px;
+    width: 90px;
+    height: 100%;
+    background:linear-gradient(45deg, rgb(81, 20, 20),rgb(195, 16, 16));
+border-radius: 60px;
+z-index:-1;
+transition: 0.3s;
+}
+.navitems a:hover{
+    text-decoration: underline;
+
+}
+.navitems a:nth-child(1):hover~span{
+    left: 470px;
+}
+.navitems a:nth-child(2):hover~span{
+    left: 620px;
+}
+.navitems a:nth-child(3):hover~span{
+    left: 790px;
+    
+}
+.navitems a:nth-child(4):hover~span{
+    left: 980px;
+   
+}
+
+.navicons{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 100px;
+}
+.navicons i{
+    color: white;
+}
+/* introduction */
+.intro{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    border: 2px solid black;
+    
+    height: 750px;
+    background-color: rgb(31, 14, 14);
+    color: rgb(204, 192, 192);
+}
+.image{
+    width: 300px;
+    border: 2px solid black;
+    height: 300px;
+    border-radius: 50%;
+    background-image: url(2.jpg);
+    background-position: center center;
+  background-size:470px ;
+}
+.intro-div1{
+   
+    width: 550px;
+    height: 200px;
+    font-size: 30px;
+    
+}
+.lets-start{
+    display: flex;
+    width: 350px;
+    /* border: 2px solid black; */
+    font-size: 20px;
+}
+.button-search{
+    background-color: rgb(194, 111, 63);
+    /* border: 2px solid black; */
+    width: 70px;
+    height: 31px;
+    border-top-right-radius:3px ;
+    border-bottom-right-radius:3px ;
+ 
+    font-size: 10px;
+    border: 2px solid rgb(207, 113, 30);
+    
+   
+}
+.button-search:hover{
+    border: 2px solid rgb(159, 124, 8);
+    color: white;
+    background: var(--clr);
+    box-shadow: 0 0 35px var(--clr);
+   
+}
+.email-search{
+    border-top-left-radius:3px ;
+    border-bottom-left-radius:3px ;
+    width: 200px;
+    border: none;
+    height: 31px;
+}
+
+
+
+/* section about me  */
+.about {
+    background-image:url(bg2.jpg);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: 1700px  690px;
+    height: 700px;
+    width: 100%;
+    margin-top: 68px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+   
+}
+.about-div1{
+   
+    color: white;
+    width: 300px;
+    font-size: 20px;
+    
+}
+
+.about-div2{
+    background-image: url(2.jpg);
+    background-size: 200px;
+    background-repeat: no-repeat;
+    height: 200px;
+    width: 200px;
+    border: 4px solid rgb(13, 61, 85);
+    border-radius:100px;
+}
+/* services */
+
+.body-service{
+    background-color: rgb(46, 19, 19);
+}
+.bigdiv{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 170px;
+    
+}
+.heading{
+    color: white;
+}
+.divs{
+    
+    width: 100%;
+    height: 300px;
+    display: flex;
+    justify-content: space-around;
+    margin-top: 80px;
+    
+}
+.div1 {
+    background-color: rgb(26, 27, 26);
+    border: 2px solid rgb(163, 149, 149);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    height: 200px;
+    width: 300px;
+    
+    margin-top: 30px;
+    padding-left: 10px;
+    color: white;
+}
+.div1 i{
+    color: rgb(99, 13, 65);
+    font-size: 30px;
+}
+.div1 p{
+    color: rgb(125, 16, 70);
+}
+.heading{
+    border: 3px solid black;
+}
+.service-button{
+    border-radius: 20px;
+    background-color: rgb(172, 132, 166);
+}
